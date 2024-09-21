@@ -7,150 +7,192 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="youtube.css">
+    <link rel="stylesheet" href="video.css",>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="global.css">
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search">
+    <div class="header" >
+      <div class="left-section">
+        <img src="images/icons/hamburger-menu.svg" class="hamburger-menu">
+        <img src="images/icons/youtube-logo.svg" class="youtube-logo">
+      </div>
+
+      <div class="mid-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img src="images/icons/search.svg" width="25px" style="margin-top: 4px;">
+        </button>
+        <button class="voice-search-button">
+          <img src="images/icons/voice-search-icon.svg" width="23px" style="margin-top: 4px;">
+        </button>
+        
+      </div>
+
+      <div class="right-section">
+        <button class="right-section-buttons">
+          <img src="images/icons/upload.svg" class="right-section-icons">
+        </button>
+        <button class="right-section-buttons">
+          <img src="images/icons/youtube-apps.svg" class="right-section-icons">
+        </button>
+        <button class="right-section-buttons">
+          <img src="images/icons/notifications.svg" class="right-section-icons">
+        </button>        
+        <button class="right-section-buttons">
+          <img src="images/icons/my-channel.jpg" class="right-section-icons" id="profile">
+        </button>
+      </div>
+
+    </div>
+
+
+
+
+
     <br>
-    
-    <div class="video-preview">
-      <div class="thumrow"><img src="images/thumbnail-1.webp" class="thumbnail"></div>
-      <div>
-        <div class="pfpcon">
-          <img src="https://i0.wp.com/onlinefilmmakingcourses.com/wp-content/uploads/2021/04/mkbhd-profile.jpg?w=900&ssl=1"  class="pfp">
-        </div>
-        <div class="vidinfo">
-          <p class="vid-title"></p>
-          Talking Tech and AI with Google CEO Sundar Pichai and MKBHD.
-          </p>
+    <div class="all-vid-grid">  
+      <div class="video-preview">
+        <div class="thumrow"><img src="images/thumbnail-1.webp" class="thumbnail"></div>
+        <div class="vidinfo-grid">
+          <div class="pfpcon">
+            <img src="https://i0.wp.com/onlinefilmmakingcourses.com/wp-content/uploads/2021/04/mkbhd-profile.jpg?w=900&ssl=1"  class="pfp">
+          </div>
         
-          <p class ="video-stats">
-          3.4M veiws &#183; 6 months ago
-          </p>
-        
-          <p class="author">
-          Maruees Brownlee 
-          </p>
-        </div>
-      </div> 
+          <div class="vidinfo">
+            <p class="vid-title">
+            Talking Tech and AI with Google CEO Sundar Pichai and MKBHD.
+            </p>
+          
+            <p class ="video-stats">
+            3.4M veiws &#183; 6 months ago
+            </p>
+          
+            <p class="author">
+            Maruees Brownlee 
+            </p>
+          </div>
+        </div> 
 
+      </div>
+      
+      <div class="video-preview">
+        <div class="thumrow"><img src="images/thumbnail-2.webp" class="thumbnail"></div>
+        <div class="vidinfo-grid">
+          <div class="pfpcon">
+            <img src="https://static.miraheze.org/amazingyoutuberswiki/e/e1/MarkiplierPFP.jpg"  class="pfp">
+          </div>
+        
+          <div class="vidinfo">
+            <p class="vid-title">
+            Try Not To Laugh Challenge #9
+            </p>
+          
+            <p class ="video-stats">
+              19M veiws &#183; 4 years ago
+            </p>
+          
+            <p class="author">
+            Markiplier 
+            </p>
+          </div>
+        </div> 
+
+      </div>
+      
+      <div class="video-preview">
+        <div class="thumrow"><img src="images/thumbnail-4.webp" class="thumbnail"></div>
+        <div class="vidinfo-grid">
+          <div class="pfpcon">
+            <img src="https://th.bing.com/th/id/OIP.M5wOfnc-HAry9-pRswyrhgAAAA?rs=1&pid=ImgDetMain"  class="pfp">
+          </div>
+          
+          <div class="vidinfo">
+            <p class="vid-title">
+            The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+          
+            <p class ="video-stats">
+              18M veiws · 4 months ago
+            </p>
+          
+            <p class="author">
+              Veritasium
+            </p>
+          </div>
+        </div> 
+
+      </div>
+      
+      <div class="video-preview">
+        <div class="thumrow"><img src="images/thumbnail-5.webp" class="thumbnail"></div>
+        <div class="vidinfo-grid">
+          <div class="pfpcon">
+            <img src="https://creatorchannels.com/wp-content/uploads/2018/11/cs-dojo.jpg"  class="pfp">
+          </div>
+          <div class="vidinfo">
+            <p class="vid-title">
+            Kadane's Algorithm to Maximum Sum Subarray Problem
+            </p>
+          
+            <p class ="video-stats">
+              519K veiws · 5 years ago
+            </p>
+          
+            <p class="author">
+              CS Dojo ✓
+            </p>
+          </div>
+        </div> 
+
+      </div>
+      
+      <div class="video-preview">
+        <div class="thumrow"><img src="images/thumbnail-3.webp" class="thumbnail"></div>
+        <div class="vidinfo-grid">
+          <div class="pfpcon">
+            <img src="https://www.kindpng.com/picc/m/368-3687422_sssniperwolf-aliashelesh-sniperwolf-freetoedit-sniper-wolf-youtuber-face.png"  class="pfp">
+          </div>
+          <div class="vidinfo">
+            <p class="vid-title">
+              Crazy Tik Toks Taken Moments Before DISASTER
+            </p>
+          
+            <p class ="video-stats">
+              12M veiws &#183; 1 year ago
+            </p>
+          
+            <p class="author">
+              SSSniperWolf
+            </p>
+          </div>
+        </div> 
+
+      </div>
+
+      <div class="video-preview">
+        <div class="thumrow"><img src="images/thumbnail-6.webp" class="thumbnail"></div>
+        <div class="vidinfo-grid">
+          <div class="pfpcon">
+            <img src="https://i.pinimg.com/736x/cc/f1/dd/ccf1dd8acb21c00c41235d5f6094a5ec.jpg"  class="pfp">
+          </div>
+          <div class="vidinfo">
+            <p class="vid-title"></p>
+            Talking Tech and AI with Google CEO Sundar Pichai and MKBHD.
+            </p>
+          
+            <p class ="video-stats">
+            141M veiws &#183; 1 year ago
+            </p>
+          
+            <p class="author">
+              MrBeast
+            </p>
+          </div>
+        </div> 
+
+      </div>
     </div>
-    
-    <div class="video-preview">
-      <div class="thumrow"><img src="images/thumbnail-2.webp" class="thumbnail"></div>
-      <div>
-        <div class="pfpcon">
-          <img src="https://static.miraheze.org/amazingyoutuberswiki/e/e1/MarkiplierPFP.jpg"  class="pfp">
-        </div>
-        <div class="vidinfo">
-          <p class="vid-title"></p>
-          Try Not To Laugh Challenge #9
-          </p>
-        
-          <p class ="video-stats">
-            19M veiws &#183; 4 years ago
-          </p>
-        
-          <p class="author">
-           Markiplier 
-          </p>
-        </div>
-      </div> 
-
-    </div>
-    
-    <div class="video-preview">
-      <div class="thumrow"><img src="images/thumbnail-4.webp" class="thumbnail"></div>
-      <div>
-        <div class="pfpcon">
-          <img src="https://th.bing.com/th/id/OIP.M5wOfnc-HAry9-pRswyrhgAAAA?rs=1&pid=ImgDetMain"  class="pfp">
-        </div>
-        <div class="vidinfo">
-          <p class="vid-title"></p>
-          The Simplest Math Problem No One Can Solve - Collatz Conjecture
-          </p>
-        
-          <p class ="video-stats">
-            18M veiws · 4 months ago
-          </p>
-        
-          <p class="author">
-            Veritasium
-          </p>
-        </div>
-      </div> 
-
-    </div>
-    
-    <div class="video-preview">
-      <div class="thumrow"><img src="images/thumbnail-5.webp" class="thumbnail"></div>
-      <div>
-        <div class="pfpcon">
-          <img src="https://creatorchannels.com/wp-content/uploads/2018/11/cs-dojo.jpg"  class="pfp">
-        </div>
-        <div class="vidinfo">
-          <p class="vid-title"></p>
-          Kadane's Algorithm to Maximum Sum Subarray Problem
-          </p>
-        
-          <p class ="video-stats">
-            519K veiws · 5 years ago
-          </p>
-        
-          <p class="author">
-            CS Dojo ✓
-          </p>
-        </div>
-      </div> 
-
-    </div>
-    
-    <div class="video-preview">
-      <div class="thumrow"><img src="images/thumbnail-3.webp" class="thumbnail"></div>
-      <div>
-        <div class="pfpcon">
-          <img src="https://www.kindpng.com/picc/m/368-3687422_sssniperwolf-aliashelesh-sniperwolf-freetoedit-sniper-wolf-youtuber-face.png"  class="pfp">
-        </div>
-        <div class="vidinfo">
-          <p class="vid-title">
-          Crazy Tik Toks Taken Moments Before DISASTER
-          </p>
-        
-          <p class ="video-stats">
-            12M veiws &#183; 1 year ago
-          </p>
-        
-          <p class="author">
-            SSSniperWolf
-          </p>
-        </div>
-      </div> 
-
-    </div>
-
-    <div class="video-preview">
-      <div class="thumrow"><img src="images/thumbnail-6.webp" class="thumbnail"></div>
-      <div>
-        <div class="pfpcon">
-          <img src="https://i.pinimg.com/736x/cc/f1/dd/ccf1dd8acb21c00c41235d5f6094a5ec.jpg"  class="pfp">
-        </div>
-        <div class="vidinfo">
-          <p class="vid-title"></p>
-          Talking Tech and AI with Google CEO Sundar Pichai and MKBHD.
-          </p>
-        
-          <p class ="video-stats">
-          141M veiws &#183; 1 year ago
-          </p>
-        
-          <p class="author">
-            MrBeast
-          </p>
-        </div>
-      </div> 
-
-    </div>
-
    
   </body>
 </html>
