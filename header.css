@@ -8,7 +8,10 @@
   border-color: lightgray;
   border-radius: 20px 0 0 20px;
   width: 0;
+
 }
+
+
 
 .search-bar::placeholder{
   font-family: Roboto,Arial;
@@ -18,7 +21,6 @@
 }
 
 .header{
-  height: 55px;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -30,7 +32,8 @@
   top: 0px;    
   left: 0px;
   right:0px;
-  height: 50px;
+  height: 56px;
+  z-index: 1;
 }
 
 .hamburger-menu{
@@ -40,6 +43,7 @@
 
 .youtube-logo{
   height: 20px;
+  margin-left: 16px;
 }
 
 .left-section{
@@ -51,11 +55,43 @@
   width: 66px;
   height: 40px;
   background-color: rgb(248, 248, 248);
-  border-width: 1px;
-  border-style: solid;
-  border-color: lightgray;
+  border: 1px solid lightgray;
   border-radius: 0 20px 20px 0;
   margin-left: -1px;
+  
+}
+
+.search-button,
+.voice-search-button,
+.right-section-buttons{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button:hover .tool-tip,
+.voice-search-button:hover .tool-tip,
+.right-section-buttons:hover .tool-tip
+{
+  opacity: 1;
+}
+
+.search-button .tool-tip,
+.voice-search-button .tool-tip,
+.right-section-buttons .tool-tip{
+  background-color: gray;
+  position: absolute;
+  color: white;
+  padding: 6px 8px 6px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: Roboto;
+  bottom: -30px;
+  opacity: 0;
+  transition: .15s;
+  pointer-events: none;
 }
 
 .voice-search-button{
@@ -94,6 +130,24 @@
 .right-section-buttons{
   background-color: white;
   border: none;
+  position: relative;
+}
+
+#notification-icon{
+  position: relative;
+}
+
+.notifications{
+  position: absolute;
+  top: -2.5px;
+  right: -4px;
+  background-color: rgb(220, 0, 0);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
 }
 
 #profile{
